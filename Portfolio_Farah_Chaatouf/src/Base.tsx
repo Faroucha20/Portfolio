@@ -1,23 +1,17 @@
+import Header from "./Composants/Header";
+import Diplomes from "./Composants/Diplomes";
+
 export default function Base() {
   return (
     <>
       <div className="w-full h-full bg-purple-200">
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <div className="w-full h-76 mb-5 border-4 border-fuchsia-300">
-            Header
-            <div>Photo</div>
-          </div>
+          <Header />
           <div className="w-1/2 h-12 m-5 border-4 border-fuchsia-300">
             Téléchargements CV basique
           </div>
-          <div className="w-1/2 h-76 m-5 border-4 flex border-fuchsia-300">
-            <div className="w-1/2 h-full p-2 border-2 border-blue-300">
-              Diplômes
-            </div>
-            <div className="w-1/2 p-2 h-full border-2 border-blue-300">
-              Image dynamique
-            </div>
-          </div>
+          <Diplomes />
+
           <div className="w-1/2 h-76 m-5 border-4 flex border-fuchsia-300 items-end">
             <div className="w-1/2 h-full p-2 border-2 border-blue-300">
               Image dynamique
@@ -31,7 +25,10 @@ export default function Base() {
             <div className="w-full h-96 my-2 p-2 border-2 border-blue-300">
               Escape Game VR
             </div><div className="w-full h-96 my-2 p-2 border-2 border-blue-300">
-              Contact
+              My_Taxi
+            </div>
+            <div className="w-full h-96 my-2 p-2 border-2 border-blue-300">
+              Bomberman Unity
             </div>
           </div>
           <div className="w-full h-76 mt-5 flex justify-between border-4 border-fuchsia-300">
