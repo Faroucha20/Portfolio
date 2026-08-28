@@ -11,7 +11,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="w-4/5 h-full flex flex-col text-3xl justify-center items-center text-white font-semibold font-serif">
+        <div className="w-4/5 h-full flex flex-col text-3xl justify-center items-center text-fuchsia-400 font-semibold font-serif">
         Portfolio Farah CHAATOUF
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import photo from "../assets/Image_Diplome.png";
 
-export default function Dinamyque() {
+export default function Dynamique() {
   const [rotation, setRotation] = useState(0);
 
   useEffect(() => {
