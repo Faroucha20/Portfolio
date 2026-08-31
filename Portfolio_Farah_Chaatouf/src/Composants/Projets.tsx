@@ -13,11 +13,11 @@ export default function Projets() {
         <div className="card-body w-full">
           <div className="card-title">Projets</div>
           <div className="flex flex-col justify-center items-center">
-            <div className="card bg-base-100 w-4/5 shadow-sm m-3 shadow-fuchsia-200">
-              <figure>
+            <div className="card bg-base-100 w-11/12 flex flex-row shadow-sm m-3 shadow-fuchsia-200">
+              <figure className="w-3/5 rounded-lg">
                 <img src={SF} alt="SmartFactory" />
               </figure>
-              <div className="card-body">
+              <div className="card-body w-2/5">
                 <h1 className="card-title">Psy Horror</h1>
                 <h3 className="font-medium">Escape Game en VR</h3>
                 <p className="m-4">
