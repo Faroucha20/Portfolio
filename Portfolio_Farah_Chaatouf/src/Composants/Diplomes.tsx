@@ -3,7 +3,7 @@ export default function Diplomes() {
     <>
       <div className="card w-10/12 h-full m-5 flex bg-base-100 card-sm shadow-xl">
         <div className="card-body w-full flex flex-col">
-          <div className="card-title">Diplômes et Etude</div>
+          <div className="card-title">Diplômes et Etudes</div>
           <div className="p-4 ">
             <div className="flex">
               <div className="font-medium text-black w-26">2023-2026 :</div>

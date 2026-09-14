@@ -21,7 +21,7 @@ export default function Experiences() {
                   <li>Evolution d'une platefarme d'industrie 4.0</li>
                   <li>Développement d'un MES</li>
                   <li>
-                    Accompagnement des étudiants dans des projet pratiques pour
+                    Accompagnement des étudiants dans des projets pratiques pour
                     enrichir la plateforme
                   </li>
                 </p>
@@ -35,14 +35,13 @@ export default function Experiences() {
               <div className="card-body">
                 <h1 className="card-title">
                   {" "}
-                  Ambassadrice de la démocartie participative et de la citoyenté
+                  Ambassadrice de la démocartie participative et de la citoyenneté
                 </h1>
                 <h3 className="font-medium">Mairie de Lomme</h3>
                 <h3 className="font-medium">2020-2024 (Bénévolat)</h3>
                 <p className="m-4">
                   <li>
-                    J'organisais et participais avec une équipe à des projets et
-                    activité avec des citoyens pour les citoyens.
+                    Organisation et participation en équipe à des projets et activités citoyens
                   </li>
                   <li>
                     Obtention de la grande médaille de l'Assemblée nationale

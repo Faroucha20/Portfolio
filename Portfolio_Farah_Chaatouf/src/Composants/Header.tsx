@@ -3,7 +3,7 @@ import photo from "../assets/photo.png";
 export default function Header() {
   return (
     <>
-      <div className="w-full h-40 mb-5 flex">
+      <div className="w-full h-40 mb-5 flex border-b-2 border-fuchsia-500">
         <div className="w-1/5 h-full flex justify-center items-center">
           <div className="avatar h-2/3">
             <div className="ring-fuchsia-700 ring-offset-base-100 rounded-full ring-2 ring-offset-2">

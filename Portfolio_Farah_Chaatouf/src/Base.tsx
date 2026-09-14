@@ -2,6 +2,7 @@ import Header from "./Composants/Header";
 import Diplomes from "./Composants/Diplomes";
 import Experiences from "./Composants/Experiences";
 import Projets from "./Composants/Projets";
+import Footer from "./Composants/Footer";
 
 export default function Base() {
   return (
@@ -22,16 +23,7 @@ export default function Base() {
 
           <Projets/>
 
-          
-          <div className="w-full h-76 mt-5 flex justify-between border-4 border-fuchsia-300">
-            Footer
-            <div className="w-1/5 h-full p-2 border-2 border-blue-300">
-              Contact
-            </div>
-            <div className="w-1/5 p-2 h-full border-2 border-blue-300">
-              Lien GitHub, Linkedin, mail
-            </div>
-          </div>
+          <Footer />
         </div>
       </div>
     </>
