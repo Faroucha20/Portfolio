@@ -1,19 +1,24 @@
-export default function Menu1() {
+export default function Menu3() {
   return (
     <>
-      <div className="w-4/5 h-screen flex justify-start items-center p-10">
-        <div className="w-full h-full flex justify-center items-start space-x-4 text-xl">
-          <button className=" flex justify-start font-bold items-center shadow-lg p-5 transition duration-500 ease-in-out rounded-full border-l-4 border-l-fuchsia-500 transform hover:-translate-y-1 hover:scale-110">
+      <div className="w-4/5 h-screen flex flex-col justify-start items-center p-10 space-y-5">
+        <div className="w-full flex h-1/10 justify-center ">
+          <button className="flex justify-start font-bold items-center shadow-lg p-5 text-white rounded-lg transition duration-500 ease-in-out h-full w-1/5 transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-blue-800 to-fuchsia-400">
             Experience
           </button>
-
-          <button className="flex justify-start font-bold items-center shadow-lg p-5 transition duration-500 ease-in-out h-1/10 w-1/5 border-l-4 border-l-fuchsia-500 transform hover:-translate-y-1 hover:scale-110">
+        </div>
+        <div className="w-full flex justify-center h-1/10 space-x-10">
+          {" "}
+          <button className="flex justify-start font-bold items-center shadow-lg p-5 text-white rounded-lg transition duration-500 ease-in-out h-full w-1/5 transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-blue-800 to-fuchsia-400">
             Formation / Diplômes
           </button>
-          <button className="flex justify-start font-bold items-center shadow-lg p-5 transition duration-500 ease-in-out h-1/10 w-1/5 border-l-4 border-l-fuchsia-500 transform hover:-translate-y-1 hover:scale-110">
+          <button className="flex justify-start font-bold items-center shadow-lg p-5 text-white rounded-lg transition duration-500 ease-in-out h-full w-1/5 transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-blue-800 to-fuchsia-400">
             Projet
           </button>
-          <button className="flex justify-start font-bold items-center shadow-lg p-5 transition duration-500 ease-in-out h-1/10 w-1/5 border-l-4 border-l-fuchsia-500 transform hover:-translate-y-1 hover:scale-110">
+        </div>
+        <div className="w-full flex justify-center h-1/10">
+          {" "}
+          <button className="flex justify-start font-bold items-center shadow-lg p-5 text-white rounded-lg transition duration-500 ease-in-out h-full w-1/5 transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-blue-800 to-fuchsia-400">
             Compétences
           </button>
         </div>
