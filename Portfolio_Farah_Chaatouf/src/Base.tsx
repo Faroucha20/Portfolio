@@ -1,36 +1,21 @@
-import Header from "./Composants/Header";
-import Diplomes from "./Composants/Diplomes";
-import Experiences from "./Composants/Experiences";
-import Projets from "./Composants/Projets";
 import Footer from "./Composants/Footer";
-import Hero from "./Composants/Hero";
 import Hero2 from "./Composants/Hero2";
-import Menu1 from "./Composants/Menu1";
 import Menu2 from "./Composants/Menu2";
-import Menu3 from "./Composants/Menu3";
-import Menu4 from "./Composants/Menu4";
 
-import CV from "./Documents/CV_Farah.pdf";
+import CV from "./Documents/CV_2026.pdf";
 
 export default function Base() {
   return (
     <>
       <div className="w-full h-full bg-base-300">
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <Header />
-          <Hero />
           <Hero2 />
-          <Menu1 />
-          <Menu2 />
-          <Menu3 />
-          <Menu4 />
-
 
           <div>
             <a
               href={CV}
               download="CV_Farah_CHAATOUF.pdf"
-              className="btn btn-outline border-blue-800 text-blue-800 hover:bg-gradient-to-r hover:from-blue-800 hover:to-fuchsia-500 hover:text-white gap-2"
+              className="btn btn-outline border-blue-800 text-blue-800 hover:bg-gradient-to-r hover:from-blue-800 hover:to-fuchsia-500 hover:text-white gap-2 my-15"
             >
               {/* Icône de téléchargement (SVG) */}
               <svg
@@ -50,12 +35,9 @@ export default function Base() {
               Télécharger mon CV
             </a>
           </div>
-          <Diplomes />
-
-          <Experiences />
-
-          <Projets />
-
+          <div className="mb-24 w-full h-fit flex justify-center items-center">
+            <Menu2 />
+          </div>
           <Footer />
         </div>
       </div>

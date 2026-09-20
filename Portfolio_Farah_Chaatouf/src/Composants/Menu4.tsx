@@ -16,10 +16,10 @@ export default function Menu4() {
           <button className="flex justify-center text-center font-bold items-center shadow-lg p-5 text-white rounded-full transition duration-500 ease-in-out aspect-square w-1/8 transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-blue-800 to-fuchsia-400 hover:rotate-10">
             Projets
           </button>
-          
           <button className="flex justify-center text-center font-bold items-center shadow-lg p-5 text-white rounded-full transition duration-500 ease-in-out aspect-square w-1/8 transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-blue-800 to-fuchsia-400">
             Compétences
           </button>
+          
           
         </div>
       </div>
