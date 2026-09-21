@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Base from "./Base";
 import Projets from "./Composants/Projets";
-import Diplomes from "./Composants/Diplomes";
+import Diplomes from "./Composants/Diplomes2";
 import Experiences from "./Composants/Experiences";
 
 createRoot(document.getElementById("root")!).render(

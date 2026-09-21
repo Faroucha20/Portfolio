@@ -1,22 +1,28 @@
 import SF from "../assets/photoSF.jpg";
 import Animatrice from "../assets/Animation.jpg";
 import Ambassadrice from "../assets/Ambassadrice.jpg";
+import Menu2 from "./Menu2";
 
 export default function Experiences() {
   return (
     <>
       <div className="w-full h-screen flex">
-        <div className="w-full">
-          <div className="w-full h-1/10 flex flex-col text-3xl justify-center items-center text-center font-semibold font-serif bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">Expériences Professionnelles</div>
-          <div className="flex h-fit flex-row space-x-3 p-3">
-            
+        <div className="w-full h-full">
+          <div className="w-full py-8 flex flex-col text-3xl justify-center items-center text-center font-semibold font-serif bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+            Expériences Professionnelles
+          </div>
+          <div className="w-full flex justify-center items-center">
+            <Menu2 />
+          </div>
+
+          <div className="flex h-fit flex-row space-x-3 p-10 mt-20">
             {/* Carte 1 */}
-            <div className="card bg-base-100 w-1/3 shadow-sm overflow-hidden flex flex-col">
+            <div className="card bg-base-100 w-1/3 shadow-lg overflow-hidden flex flex-col">
               <figure className="h-2/5 w-full">
-                <img 
-                  src={SF} 
-                  alt="SmartFactory" 
-                  className="w-full h-full object-cover" 
+                <img
+                  src={SF}
+                  alt="SmartFactory"
+                  className="w-full h-full object-cover"
                 />
               </figure>
               <div className="card-body h-3/5">
@@ -37,18 +43,21 @@ export default function Experiences() {
                     Développement Web - Développement d'un MES (Logiciel de
                     gestion de production)
                   </li>
-                  <li>Présentation de la plateforme aux étudiants et visiteurs extérieurs</li>
+                  <li>
+                    Présentation de la plateforme aux étudiants et visiteurs
+                    extérieurs
+                  </li>
                 </ul>
               </div>
             </div>
 
             {/* Carte 2 */}
-            <div className="card bg-base-100 w-1/3 shadow-sm overflow-hidden flex flex-col">
+            <div className="card bg-base-100 w-1/3 shadow-lg overflow-hidden flex flex-col">
               <figure className="h-2/5 w-full">
-                <img 
-                  src={Ambassadrice} 
-                  alt="Ambassadrice" 
-                  className="w-full h-full object-cover" 
+                <img
+                  src={Ambassadrice}
+                  alt="Ambassadrice"
+                  className="w-full h-full object-cover"
                 />
               </figure>
               <div className="card-body h-3/5">
@@ -63,14 +72,14 @@ export default function Experiences() {
                     Organisation et participation en équipe à des projets et
                     activités citoyens
                   </li>
+                  <li>Organisation d'une donnerie de vêtements</li>
                   <li>
-                    Organisation d'une donnerie de vêtements
+                    Session d'activités d'origami avec les Lommois pour un
+                    projet de rideau de grues
                   </li>
                   <li>
-                    Session d'activités d'origami avec les Lommois pour un projet de rideau de grues
-                  </li>
-                  <li>
-                    Session d'activités pour fabriquer un arbre à voeux pour le marché de Noël
+                    Session d'activités pour fabriquer un arbre à voeux pour le
+                    marché de Noël
                   </li>
                   <li>
                     Obtention de la grande médaille de l'Assemblée nationale
@@ -80,12 +89,12 @@ export default function Experiences() {
             </div>
 
             {/* Carte 3 */}
-            <div className="card bg-base-100 w-1/3 shadow-sm overflow-hidden flex flex-col">
+            <div className="card bg-base-100 w-1/3 shadow-lg overflow-hidden flex flex-col">
               <figure className="h-2/5 w-full">
-                <img 
-                  src={Animatrice} 
-                  alt="Animatrice" 
-                  className="w-full h-full object-cover" 
+                <img
+                  src={Animatrice}
+                  alt="Animatrice"
+                  className="w-full h-full object-cover"
                 />
               </figure>
               <div className="card-body h-3/5">
@@ -101,7 +110,6 @@ export default function Experiences() {
                 </ul>
               </div>
             </div>
-            
           </div>
         </div>
       </div>

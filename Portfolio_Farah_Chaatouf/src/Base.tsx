@@ -35,7 +35,7 @@ export default function Base() {
               Télécharger mon CV
             </a>
           </div>
-          <div className="mb-24 w-full h-fit flex justify-center items-center">
+          <div className="mb-20 w-full h-fit flex justify-center items-center">
             <Menu2 />
           </div>
           <Footer />

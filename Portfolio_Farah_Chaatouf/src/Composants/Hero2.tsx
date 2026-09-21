@@ -4,13 +4,13 @@ export default function Hero() {
   return (
     <>
       <div className="w-4/5 h-screen flex justify-center items-center">
-        <div className="relative w-4/5 h-4/5  mb-5 shadow-lg shadow-200 rounded-3xl flex">
+        <div className="relative w-4/5 h-4/5  mb-5 shadow-lg rounded-3xl flex">
           <div className="w-2/5 h-full flex justify-center items-center ml-12">
             <div className="avatar w-full h-full flex justify-start items-center">
               <img
                 alt="photo_profil"
                 src={photo}
-                className="rounded-3xl h-10/12 w-11/12 object-cover object-[50%_10%]"
+                className="rounded-3xl h-10/12 w-11/12 shadow-xl object-cover object-[50%_10%]"
               />
             </div>
           </div>
