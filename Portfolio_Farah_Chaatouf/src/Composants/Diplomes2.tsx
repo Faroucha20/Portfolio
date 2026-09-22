@@ -1,12 +1,17 @@
 import Menu2 from "./Menu2";
+import Fleche from "./Fleche";
 
 export default function Diplomes2() {
   return (
     <>
       <div className="w-full h-full flex flex-col justify-between items-center pb-10">
-        <div className="w-full py-8 flex text-3xl justify-center items-center text-center font-semibold font-serif bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
-          Diplômes et Formations
+        <div className="flex">
+          <Fleche />
+          <div className="w-fit py-8 flex text-3xl justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone">
+            Diplômes et Formations
+          </div>
         </div>
+
         <div className="w-full flex justify-center items-center">
           <Menu2 />
         </div>

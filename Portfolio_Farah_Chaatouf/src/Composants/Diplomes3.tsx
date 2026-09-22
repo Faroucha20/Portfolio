@@ -2,10 +2,10 @@ export default function Diplomes3() {
   return (
     <>
       <div className="w-full/12 h-screen flex">
-        <div className="w-full h-1/10 flex flex-col text-3xl justify-center items-center text-center font-semibold font-serif bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+        <div className="w-full h-1/10 flex flex-col text-3xl justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
           Expériences Professionnelles
         </div>
-       
+
         <div className="w-full h-96"></div>
 
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -26,7 +26,7 @@ export default function Diplomes3() {
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2018</time>
-              <div className="text-lg w-fit font-black bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+              <div className="text-lg w-fit font-black bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
                 Obtention du diplôme des Premiers Secours Citoyens
               </div>
               Collège Jean Jaurès - Lomme
@@ -51,7 +51,7 @@ export default function Diplomes3() {
             </div>
             <div className="timeline-end md:mb-10">
               <time className="font-mono italic">2021</time>
-              <div className="text-lg w-fit font-black bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+              <div className="text-lg w-fit font-black bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
                 BAC Général
               </div>
               <div>Lycée Jean Perrin - Lambersart</div>
@@ -80,7 +80,7 @@ export default function Diplomes3() {
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2023</time>
-              <div className="text-lg w-fit font-black bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+              <div className="text-lg w-fit font-black bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
                 BAFA Complet
               </div>
               CEMEA - Lille
@@ -105,7 +105,7 @@ export default function Diplomes3() {
             </div>
             <div className="timeline-end mb-10">
               <time className="font-mono italic">2023</time>
-              <div className="text-lg w-fit font-black bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+              <div className="text-lg w-fit font-black bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
                 BTS Système Numérique option Electronique et Communication
               </div>
               Lycée Gustave Eiffel - Armentières
@@ -130,7 +130,7 @@ export default function Diplomes3() {
             </div>
             <div className="timeline-start flex flex-col items-end mb-10 md:mb-10 md:text-end">
               <time className="font-mono italic">2026</time>
-              <div className="text-lg w-fit font-black bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+              <div className="text-lg w-fit font-black bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
                 Master Scientifique Professionnel en Informatique
               </div>
               <div>Ecole d'informatique Epitech - Lille</div>

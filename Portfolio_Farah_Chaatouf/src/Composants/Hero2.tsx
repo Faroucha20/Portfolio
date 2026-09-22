@@ -14,19 +14,19 @@ export default function Hero() {
               />
             </div>
           </div>
-          <div className="relative flex flex-col justify-center items-center w-3/5 h-3/10 top-1/3 animate-pulse">
-            <div className="w-full h-full flex flex-col text-7xl text-center font-semibold font-serif bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+          <div className="relative flex flex-col justify-center items-center w-3/5 h-3/10 top-1/3">
+            <div className="w-full h-full flex flex-col text-7xl text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone">
               Portfolio
             </div>
-            <div className="w-full h-full flex flex-col text-4xl justify-center items-center text-center font-semibold font-serif bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+            <div className="w-full h-full flex flex-col text-4xl justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone">
               Farah Chaatouf
             </div>
-            <div className="w-full h-full flex flex-col text-lg justify-center items-center text-center font-semibold font-serif bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+            <div className="w-full h-full flex flex-col text-lg justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone">
               Ingénieure Industrie 4.0
             </div>
           </div>
           <div className="absolute bottom-5 right-10 ">
-            <div className="text-lg justify-center items-center text-center font-semibold font-serif bg-gradient-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+            <div className="text-lg justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone animate-pulse">
               Disponible dès octobre 2026
             </div>
           </div>

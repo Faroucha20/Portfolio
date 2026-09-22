@@ -15,7 +15,7 @@ export default function Base() {
             <a
               href={CV}
               download="CV_Farah_CHAATOUF.pdf"
-              className="btn btn-outline border-blue-800 text-blue-800 hover:bg-gradient-to-r hover:from-blue-800 hover:to-fuchsia-500 hover:text-white gap-2 my-15"
+              className="btn btn-outline border-blue-800 text-blue-800 hover:bg-linear-to-r hover:from-blue-800 hover:to-fuchsia-500 hover:text-white gap-2 my-15"
             >
               {/* Icône de téléchargement (SVG) */}
               <svg
