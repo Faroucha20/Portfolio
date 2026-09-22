@@ -114,7 +114,7 @@ export default function PrismMES() {
             </li>
             <li>Interface utilisateur intuitive</li>
             <li>
-              React, tailwind, daisyui, Express JS, Mysql, Swagger, Docker
+              React, Tailwind, Daisyui, Express JS, Mysql, Swagger, Docker
             </li>
             <li>
               Responsive

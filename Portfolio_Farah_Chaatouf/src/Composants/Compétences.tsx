@@ -36,6 +36,8 @@ export default function Competences() {
                 <div>TypeScript</div>
                 <div>Tailwind</div>
                 <div>DaisyUI</div>
+                <div>NodeJS</div>
+
               </div>
               <div className="divider divider-horizontal"></div>
               <div>
