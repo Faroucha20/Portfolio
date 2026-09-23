@@ -1,8 +1,55 @@
+import React, { useState, useEffect, useRef } from "react";
 import SF from "../assets/photoSF.jpg";
 import Animatrice from "../assets/Animation.jpg";
 import Ambassadrice from "../assets/Ambassadrice.jpg";
 import Menu2 from "./Menu2";
 import Fleche from "./Fleche";
+
+// 1. Création du composant d'animation (uniquement actif en disposition verticale)
+const FadeInCard = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  const [isVisible, setVisible] = useState(false);
+  const domRef = useRef(null);
+
+  useEffect(() => {
+    const currentRef = domRef.current;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+    return () => {
+      if (currentRef) observer.unobserve(currentRef);
+    };
+  }, []);
+
+  return (
+    <div
+      ref={domRef}
+      // On remet lg:opacity-100 lg:translate-y-0 lg:transition-none pour figer les cartes sur grand écran
+      className={`transition-all duration-1000 ease-out transform lg:opacity-100 lg:translate-y-0 lg:transition-none ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+      } ${className}`}
+    >
+      {children}
+    </div>
+  );
+};
 
 export default function Experiences() {
   return (
@@ -19,10 +66,10 @@ export default function Experiences() {
           <Menu2 />
         </div>
 
-        {/* CORRECTION ICI : Remplacement de space-x et space-y par gap-6 */}
         <div className="flex w-full lg:flex-row flex-col gap-6 md:p-10 p-3 mt-10 items-stretch">
-          {/* Carte 1 */}
-          <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
+          
+          {/* Carte 1 remplacée par FadeInCard */}
+          <FadeInCard className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
             <figure className="h-64 w-full shrink-0">
               <img
                 src={SF}
@@ -54,10 +101,10 @@ export default function Experiences() {
                 </li>
               </ul>
             </div>
-          </div>
+          </FadeInCard>
 
-          {/* Carte 2 */}
-          <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
+          {/* Carte 2 remplacée par FadeInCard */}
+          <FadeInCard className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
             <figure className="h-64 w-full shrink-0">
               <img
                 src={Ambassadrice}
@@ -90,15 +137,14 @@ export default function Experiences() {
                 </li>
               </ul>
             </div>
-          </div>
+          </FadeInCard>
 
-          {/* Carte 3 */}
-          <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
+          {/* Carte 3 remplacée par FadeInCard */}
+          <FadeInCard className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
             <figure className="h-64 w-full shrink-0">
               <img
                 src={Animatrice}
                 alt="Animatrice"
-                // L'ajout de object-top est ici :
                 className="w-full h-full object-cover object-[50%_30%]"
               />
             </figure>
@@ -113,7 +159,8 @@ export default function Experiences() {
                 <li>Organisation de spectacles</li>
               </ul>
             </div>
-          </div>
+          </FadeInCard>
+
         </div>
       </div>
     </>

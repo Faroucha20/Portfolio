@@ -27,7 +27,7 @@ export default function Hero() {
           </div>
           <div className="absolute bottom-5 md:right-10 right-3">
             <div className="lg:text-lg text-xs justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone animate-pulse">
-              Disponible dès octobre 2026
+              Disponible dès janvier 2027
             </div>
           </div>
         </div>

@@ -1,5 +1,46 @@
+import React, { useState, useEffect, useRef } from "react";
 import Menu2 from "./Menu2";
 import Fleche from "./Fleche";
+
+// Composant qui remplace la balise <li> classique
+const AnimatedTimelineItem = ({ children }: { children: React.ReactNode }) => {
+  const [isVisible, setVisible] = useState(false);
+  const domRef = useRef(null);
+
+  useEffect(() => {
+    const currentRef = domRef.current;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 } 
+    );
+
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+    return () => {
+      if (currentRef) observer.unobserve(currentRef);
+    };
+  }, []);
+
+  return (
+    <li
+      ref={domRef}
+      // On a supprimé les classes lg:... ici pour que l'animation s'applique partout
+      className={`transition-all duration-1000 ease-out transform ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+      }`}
+    >
+      {children}
+    </li>
+  );
+};
 
 export default function Diplomes2() {
   return (
@@ -15,10 +56,12 @@ export default function Diplomes2() {
         <div className="w-full flex justify-center items-center">
           <Menu2 />
         </div>
+        
         <div className="w-11/12 shadow-xl rounded-3xl mt-20">
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-            <li>
-              <div className="timeline-middle">
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical overflow-hidden">
+            
+            <AnimatedTimelineItem>
+              <div className="timeline-middle transform hover:-translate-y-1 hover:scale-110">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -40,10 +83,11 @@ export default function Diplomes2() {
                 Collège Jean Jaurès - Lomme
               </div>
               <hr />
-            </li>
-            <li>
+            </AnimatedTimelineItem>
+
+            <AnimatedTimelineItem>
               <hr />
-              <div className="timeline-middle">
+              <div className="timeline-middle hover:-translate-y-1 hover:scale-110">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -66,13 +110,12 @@ export default function Diplomes2() {
                   Maths Expertes
                 </div>
               </div>
-
               <hr />
-            </li>
+            </AnimatedTimelineItem>
 
-            <li>
+            <AnimatedTimelineItem>
               <hr />
-              <div className="timeline-middle">
+              <div className="timeline-middle hover:-translate-y-1 hover:scale-110">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -92,10 +135,11 @@ export default function Diplomes2() {
                 CEMEA - Lille
               </div>
               <hr />
-            </li>
-            <li>
+            </AnimatedTimelineItem>
+
+            <AnimatedTimelineItem>
               <hr />
-              <div className="timeline-middle">
+              <div className="timeline-middle hover:-translate-y-1 hover:scale-110">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -117,10 +161,11 @@ export default function Diplomes2() {
                 Lycée Gustave Eiffel - Armentières
               </div>
               <hr />
-            </li>
-            <li>
+            </AnimatedTimelineItem>
+
+            <AnimatedTimelineItem>
               <hr />
-              <div className="timeline-middle">
+              <div className="timeline-middle hover:-translate-y-1 hover:scale-110">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -146,7 +191,8 @@ export default function Diplomes2() {
                 </div>
                 <div>+ option Intelligence Artificielle</div>
               </div>
-            </li>
+            </AnimatedTimelineItem>
+
           </ul>
         </div>
       </div>
