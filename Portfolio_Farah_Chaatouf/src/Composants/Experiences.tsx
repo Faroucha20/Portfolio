@@ -19,9 +19,9 @@ export default function Experiences() {
           <Menu2 />
         </div>
 
-        <div className="flex h-fit flex-row space-x-3 p-10 mt-10">
+        <div className="flex h-fit lg:flex-row flex-col lg:space-x-3 space-y-6 md:p-10 p-3 mt-10">
           {/* Carte 1 */}
-          <div className="card bg-base-100 w-1/3 shadow-lg overflow-hidden flex flex-col">
+          <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
             <figure className="h-2/5 w-full">
               <img
                 src={SF}
@@ -56,7 +56,7 @@ export default function Experiences() {
           </div>
 
           {/* Carte 2 */}
-          <div className="card bg-base-100 w-1/3 shadow-lg overflow-hidden flex flex-col">
+          <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
             <figure className="h-2/5 w-full">
               <img
                 src={Ambassadrice}
@@ -92,7 +92,7 @@ export default function Experiences() {
           </div>
 
           {/* Carte 3 */}
-          <div className="card bg-base-100 w-1/3 shadow-lg overflow-hidden flex flex-col">
+          <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
             <figure className="h-2/5 w-full">
               <img
                 src={Animatrice}

@@ -8,8 +8,8 @@ import Preparation from "../assets/Preparation.png";
 export default function PrismMES() {
   return (
     <>
-      <div className="card bg-base-100 w-11/12 flex flex-row shadow-lg m-3 rounded-3xl">
-        <figure className="w-3/5 rounded-3xl">
+      <div className="card bg-base-100 w-11/12 flex lg:flex-row flex-col shadow-lg m-3 rounded-3xl">
+        <figure className="lg:w-3/5 rounded-3xl">
           <div className="carousel h-full">
             <div id="slide1.2" className="carousel-item relative w-full">
               <img
@@ -103,7 +103,7 @@ export default function PrismMES() {
             </div>
           </div>
         </figure>
-        <div className="card-body w-2/5">
+        <div className="card-body lg:w-2/5">
           <h1 className="card-title">PrismMES</h1>
           <h3 className="font-medium">
             Logiciel de gestion de ligne de production (MES)

@@ -7,8 +7,8 @@ import Desert from "../assets/Desert.png";
 
 export default function Bomberman(){
     return(
-        <> <div className="card bg-base-100 w-11/12 flex flex-row shadow-lg m-3 rounded-3xl">
-              <figure className="w-3/5 rounded-3xl">
+        <> <div className="card bg-base-100 w-11/12 flex lg:flex-row flex-col shadow-lg m-3 rounded-3xl">
+              <figure className="lg:w-3/5 rounded-3xl">
                 <div className="carousel h-full">
                   <div id="Carte" className="carousel-item relative w-full">
                     <img
@@ -102,7 +102,7 @@ export default function Bomberman(){
                   </div>
                 </div>
               </figure>
-              <div className="card-body w-2/5">
+              <div className="card-body lg:w-2/5">
                 <h1 className="card-title">Bomberman</h1>
                 <h3 className="font-medium">Jeu de type Bomberman (Encore en cours de développement)</h3>
                 <p className="m-4">

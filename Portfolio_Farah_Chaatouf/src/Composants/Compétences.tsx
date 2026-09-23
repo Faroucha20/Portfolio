@@ -14,8 +14,8 @@ export default function Competences() {
         <div className="w-full flex justify-center items-center">
           <Menu2 />
         </div>
-        <div className="flex w-11/12 items-start justify-center space-x-10 mt-20">
-          <div className="w-1/4 rounded-xl shadow-2xl p-5 flex flex-col justify-center items-center">
+        <div className="flex max-lg:flex-col w-11/12 lg:items-start items-center justify-center space-y-12 lg:space-x-10 my-20">
+          <div className="lg:w-1/4 rounded-xl shadow-2xl p-5 flex flex-col justify-center items-center">
             <div className="w-fit mb-5 flex text-xl justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone">
               Langues
             </div>
@@ -25,11 +25,11 @@ export default function Competences() {
               <li>Espagnol (A2)</li>
             </div>
           </div>
-          <div className="w-2/3 rounded-xl shadow-2xl p-5 flex flex-col justify-center items-center">
+          <div className="lg:w-2/3 rounded-xl shadow-2xl p-5 flex flex-col justify-center items-center">
             <div className="w-fit mb-5 flex text-xl justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone">
               Codage
             </div>
-            <div className="flex w-full justify-between">
+            <div className="flex max-md:flex-col w-full justify-between">
               <div>
                 <div>Java Script</div>
                 <div>React</div>
@@ -39,26 +39,26 @@ export default function Competences() {
                 <div>NodeJS</div>
 
               </div>
-              <div className="divider divider-horizontal"></div>
+              <div className="divider md:divider-horizontal"></div>
               <div>
                 <div>Unity</div>
                 <div>C#</div>
               </div>
-              <div className="divider divider-horizontal"></div>
+              <div className="divider md:divider-horizontal"></div>
               <div>
                 <div>CSS</div>
                 <div>HTML</div>
                 <div>SQL</div>
               </div>
 
-              <div className="divider divider-horizontal"></div>
+              <div className="divider md:divider-horizontal"></div>
               <div>
                 <div>Bash</div>
                 <div>Express JS</div>
                 <div>Python</div>
                 <div>C</div>
               </div>
-              <div className="divider divider-horizontal"></div>
+              <div className="divider md:divider-horizontal"></div>
               <div>
                 <div>Docker</div>
                 <div>Docker-compose</div>
@@ -66,7 +66,7 @@ export default function Competences() {
               </div>
             </div>
           </div>
-          <div className="w-1/4 rounded-xl shadow-2xl p-5 flex flex-col justify-center items-center">
+          <div className="lg:w-1/4 rounded-xl shadow-2xl p-5 flex flex-col justify-center items-center">
             <div className="w-fit mb-5 flex text-xl justify-center items-center text-center font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent box-decoration-clone">
               Soft Skills
             </div>
@@ -75,7 +75,6 @@ export default function Competences() {
               <li>Esprit d'équipe</li>
               <li>Pédagogue</li>
               <li>Autonomie</li>
-              <li>Pédagogue</li>
               <li>Sens des responsabilités</li>
               <li>Bonne capacité d'adapation</li>
             </div>

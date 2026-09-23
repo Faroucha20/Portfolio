@@ -4,8 +4,8 @@ import videoPsyHorror from "../Documents/Video_Psy_Horror.mp4";
 export default function Psy_Horror() {
   return (
     <>
-      <div className="card bg-base-100 w-11/12 flex flex-row shadow-lg m-3 rounded-3xl">
-        <figure className="w-3/5 rounded-3xl">
+      <div className="card bg-base-100 w-11/12 flex lg:flex-row flex-col shadow-lg m-3 rounded-3xl">
+        <figure className="lg:w-3/5 rounded-3xl">
           <video
             className="w-full h-full object-cover"
             controls // Affiche les commandes (play, volume, etc.)
@@ -15,7 +15,7 @@ export default function Psy_Horror() {
             Votre navigateur ne prend pas en charge la lecture de vidéos.
           </video>
         </figure>
-        <div className="card-body w-2/5">
+        <div className="card-body lg:w-2/5">
           <h1 className="card-title">Psy Horror</h1>
           <h3 className="font-medium">Escape Game en VR</h3>
           <p className="m-4">

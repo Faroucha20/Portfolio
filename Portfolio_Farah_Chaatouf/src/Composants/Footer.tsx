@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <>
-      <div className="w-full h-44 px-3 flex justify-between">
-        <div className="w-1/3 h-full p-2 space-y-3">
-          <div className="w-fit text-2xl font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
+      <div className="w-full md:h-44 h-full px-3 flex justify-between">
+        <div className="md:w-1/3 h-full p-2 md:space-y-3">
+          <div className="w-fit md:text-2xl font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
             Contact
           </div>
           <div className="flex space-x-2">
