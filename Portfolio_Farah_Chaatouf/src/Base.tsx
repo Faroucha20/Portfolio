@@ -7,10 +7,7 @@ import CV from "./Documents/CV_2026.pdf";
 export default function Base() {
   return (
     <>
-      <div className="w-10 h-10 3xl:bg-violet-700 2xl:bg-red-700 xl:bg-red-300 lg:bg-amber-500 md:bg-yellow-300 sm:bg-green-300 bg-blue-300">
-        test
-      </div>
-      <div className="w-full lg:h-full md:h-screen bg-base-300">
+      <div className="w-full lg:h-full md:h-screen max-sm:h-screen bg-base-300">
         <div className="w-full h-full flex flex-col justify-between items-center">
           <div className="lg:h-screen h-3/6 w-full flex justify-center items-center">
             <Hero2 />
@@ -40,7 +37,7 @@ export default function Base() {
               Télécharger mon CV
             </a>
           </div>
-          <div className="lg:mb-20 w-full lg:h-fit h-1/6 flex justify-center items-center">
+          <div className="lg:mb-20 w-full lg:h-fit flex justify-center items-center">
             <Menu2 />
           </div>
           <div className="max-lg:h-1/6 w-full flexjustify-start items-end">

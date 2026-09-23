@@ -5,6 +5,7 @@ import Psy_Horror from "../Projets/Psy_Horror";
 import My_Taxi from "../Projets/My_Taxi";
 import Bomberman from "../Projets/Bomberman";
 import PrismMES from "../Projets/PrismMES";
+import BTS from "../Projets/BTS";
 
 const FadeInSection = ({ children }: { children: React.ReactNode }) => {
   const [isVisible, setVisible] = useState(false);
@@ -76,6 +77,10 @@ export default function Projets() {
 
           <FadeInSection>
             <PrismMES />
+          </FadeInSection>
+
+          <FadeInSection>
+            <BTS />
           </FadeInSection>
         </div>
       </div>
