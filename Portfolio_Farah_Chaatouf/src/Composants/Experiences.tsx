@@ -19,17 +19,18 @@ export default function Experiences() {
           <Menu2 />
         </div>
 
-        <div className="flex h-fit lg:flex-row flex-col lg:space-x-3 space-y-6 md:p-10 p-3 mt-10">
+        {/* CORRECTION ICI : Remplacement de space-x et space-y par gap-6 */}
+        <div className="flex w-full lg:flex-row flex-col gap-6 md:p-10 p-3 mt-10 items-stretch">
           {/* Carte 1 */}
           <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
-            <figure className="h-2/5 w-full">
+            <figure className="h-64 w-full shrink-0">
               <img
                 src={SF}
                 alt="SmartFactory"
                 className="w-full h-full object-cover"
               />
             </figure>
-            <div className="card-body h-3/5">
+            <div className="card-body flex-1">
               <h1 className="card-title">Ingénieure en Industrie 4.0</h1>
               <h3 className="font-medium">
                 Centrale Lille Institut - Villeneuve-d'Ascq
@@ -57,14 +58,14 @@ export default function Experiences() {
 
           {/* Carte 2 */}
           <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
-            <figure className="h-2/5 w-full">
+            <figure className="h-64 w-full shrink-0">
               <img
                 src={Ambassadrice}
                 alt="Ambassadrice"
                 className="w-full h-full object-cover"
               />
             </figure>
-            <div className="card-body h-3/5">
+            <div className="card-body flex-1">
               <h1 className="card-title">
                 Ambassadrice de la démocratie participative et de la citoyenneté
               </h1>
@@ -93,21 +94,21 @@ export default function Experiences() {
 
           {/* Carte 3 */}
           <div className="card bg-base-100 lg:w-1/3 w-full shadow-lg overflow-hidden flex flex-col">
-            <figure className="h-2/5 w-full">
+            <figure className="h-64 w-full shrink-0">
               <img
                 src={Animatrice}
                 alt="Animatrice"
-                className="w-full h-full object-cover"
+                // L'ajout de object-top est ici :
+                className="w-full h-full object-cover object-[50%_30%]"
               />
             </figure>
-            <div className="card-body h-3/5">
+            <div className="card-body flex-1">
               <h1 className="card-title">Animatrice en centre de loisirs</h1>
               <h3 className="font-medium">Mairie de Lomme</h3>
               <h3 className="font-medium">2021-2024 (Vacation)</h3>
               <ul className="m-4 list-disc pl-4">
                 <li>Activités manuelles</li>
                 <li>Activités sportives</li>
-
                 <li>Théâtre</li>
                 <li>Organisation de spectacles</li>
               </ul>
