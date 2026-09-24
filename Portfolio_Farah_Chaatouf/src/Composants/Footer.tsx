@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <div className="w-full md:h-44 h-full px-3 flex justify-between">
-        <div className="md:w-1/3 h-full p-2 md:space-y-3">
+        <div className="md:w-2/3 h-full p-2 md:space-y-2">
           <div className="w-fit md:text-2xl font-semibold font-serif bg-linear-to-r from-blue-800 to-fuchsia-400 bg-clip-text text-transparent decoration-clone">
             Contact
           </div>
@@ -65,6 +65,9 @@ export default function Footer() {
               </svg>
             </a>
             <div>https://www.linkedin.com/in/farah-chaatouf-776b8327a/</div>
+          </div>
+          <div className="flex space-x-2">
+            <div>Permis B + Véhiculée</div>
           </div>
         </div>
       </div>
